@@ -3,6 +3,13 @@ export const QUERY = gql`
     posts {
       id
       title
+      author {
+        email
+      }
+      prompt {
+        text
+      }
+      roundId
       body
       createdAt
     }
