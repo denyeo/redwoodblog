@@ -22,6 +22,7 @@ export const schema = gql`
     title: String!
     body: String!
     authorName: String!
+    # author: String!
   }
 
   input UpdatePostInput {

@@ -4,7 +4,7 @@ export const QUERY = gql`
       id
       title
       author {
-        email
+        name
       }
       prompt {
         text
@@ -23,5 +23,10 @@ export const Empty = () => <div>Empty</div>
 export const Failure = ({ error }) => <div>Error: {error.message}</div>
 
 export const Success = ({ posts }) => {
-  return JSON.stringify(posts)
+  return posts.map((post) => (
+    <div>
+      <h3>{post.id} {post.title}</h3>
+      <p>{post.body}</p>
+    </div>
+  ))
 }
