@@ -12,6 +12,9 @@ const BlogLayout = ({ children }) => {
             <li>
               <Link to={routes.about()}>About</Link>
             </li>
+            <li>
+              <Link to={routes.submit()}>Submit your piece of writing</Link>
+            </li>
           </ul>
         </nav>
       </header>

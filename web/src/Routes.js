@@ -18,6 +18,7 @@ const Routes = () => {
       <Route path="/posts/{id:Int}" page={PostPage} name="post" />
       <Route path="/posts" page={PostsPage} name="posts" />
       <Set wrap={BlogLayout}>
+        <Route path="/submit" page={SubmitPage} name="submit" />
         <Route path="/about" page={AboutPage} name="about" />
         <Route path="/" page={HomePage} name="home" />
       </Set>
