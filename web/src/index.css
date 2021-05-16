@@ -3,6 +3,7 @@
 button, input, label, textarea {
   display: block;
   outline: none;
+  font-size: 1.4em;
 }
 
 label {

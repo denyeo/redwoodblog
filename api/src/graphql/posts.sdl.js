@@ -16,11 +16,12 @@ export const schema = gql`
   }
 
   input CreatePostInput {
-    authorId: Int
-    roundId: Int
-    promptId: Int
+    # authorId: Int
+    # roundId: Int
+    # promptId: Int
     title: String!
     body: String!
+    authorName: String!
   }
 
   input UpdatePostInput {
@@ -29,5 +30,9 @@ export const schema = gql`
     promptId: Int
     title: String
     body: String
+  }
+
+  type Mutation {
+    createPost(input: CreatePostInput!): Post
   }
 `

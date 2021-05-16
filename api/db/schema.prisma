@@ -24,7 +24,7 @@ model Post {
 
 model User {
   id        Int      @id @default(autoincrement())
-  email     String
+  email     String?
   name      String
   post      Post[]
   createdAt DateTime @default(now())
